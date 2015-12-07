@@ -52,7 +52,7 @@ class MusicianController extends Controller
             'address',
         ];
         $home=Request::only($home_values);
-        $results = DB::select('select * from Homes where address = ?', array($home['address']));
+        $results = DB::select('select * from homes where address = ?', array($home['address']));
         if ($results == null) {
             Home::create($home);
         }
