@@ -54,8 +54,8 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', '104.236.223.166'),
-            'database'  => env('DB_DATABASE', 'musicdb'),
+            'host'      => env('DB_HOST', '127.0.0.1'),
+            'database'  => env('DB_DATABASE', 'abcmusic'),
             'username'  => env('DB_USERNAME', 'forge'),
             'password'  => env('DB_PASSWORD', '7G3aewOoQjpDx7J7sFA8'),
             'charset'   => 'utf8',
