@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/'),
-            'database'  => env('DB_DATABASE', 'php'),
-            'username'  => env('DB_USERNAME', 'adminFDADl2U'),
-            'password'  => env('DB_PASSWORD', '6kI-CXC6H7lY'),
+            'host'      => env('DB_HOST', '104.236.223.166'),
+            'database'  => env('DB_DATABASE', 'musicdb'),
+            'username'  => env('DB_USERNAME', 'forge'),
+            'password'  => env('DB_PASSWORD', '7G3aewOoQjpDx7J7sFA8'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
