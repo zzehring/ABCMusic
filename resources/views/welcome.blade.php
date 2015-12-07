@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-md-3">
                         <h2>Our Instruments</h2>
-                        <a class="btn btn-default" href="albums" role="button">View Instruments</a>
+                        <a class="btn btn-default" href="instruments" role="button">View Instruments</a>
                     </div>
 
                 </div>
