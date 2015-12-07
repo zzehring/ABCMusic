@@ -17,7 +17,7 @@
             <tr>
                 <td>{{ $instrument->id }}</td>
                 <td>{{ $instrument->name }}</td>
-                <td>{{ $instrument->music_key }}</td>
+                <td>{{ $instrument->musical_key }}</td>
                 {{--<td><a href="{{route('musician.edit',$musician->id)}}" class="btn btn-warning">Update</a></td>--}}
                 {{--<td>--}}
                     {{--{!! Form::open(['method' => 'DELETE', 'route'=>['songs.destroy', $song->song_id]]) !!}--}}
