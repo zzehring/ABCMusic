@@ -50,7 +50,16 @@ class InstrumentsController extends Controller
      */
     public function show($id)
     {
-        //
+        $artists = DB::table('Musician_has_Instrument')
+                        ->join('musicians', 'Musician_has_Instrument.musician_id', '=', 'musicians.id')
+                        ->join('instruments', 'Musician_has_Instrument.instrument_id', '=', 'instruments.id')
+                        ->select('musicians.name')
+                        ->where('instruments.id', '=', $id)
+                        ->get();
+        $instrument = DB::table('instruments')->where('id', '=', $id);
+
+
+        return view('instruments.show', compact('artists', 'instrument'));
     }
 
     /**
