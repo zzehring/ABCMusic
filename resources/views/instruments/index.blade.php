@@ -9,7 +9,7 @@
             <th>Instrument ID</th>
             <th>Instrument Name</th>
             <th>Key</th>
-            {{--<th colspan="3">Actions</th>--}}
+            <th colspan="3">Actions</th>
         </tr>
         </thead>
         <tbody>

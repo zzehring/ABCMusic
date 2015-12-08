@@ -13,8 +13,8 @@
         <tbody>
         @foreach ($artists as $artist)
             <tr>
-                <td>{{ $artist->id }}</td>
                 <td>{{ $artist->name }}</td>
+                <td>{{ $artist->id }}</td>
             </tr>
         @endforeach
 
