@@ -109,7 +109,7 @@ class InstrumentsController extends Controller
         $artists = DB::table('musicians')
                         ->join('Musician_has_Instrument', 'Musician_has_Instrument.musician_id', '=', 'musicians.id')
                         ->groupBy('Musician_has_Instrument.musician_id')
-                        ->having('count(Musician_has_Instrument.instrument_id)', '>', '1')
+                        ->having('count', '>', '1')
                         ->get();
 
         return view('instruments.multiple', compact('artists'));
