@@ -70,7 +70,9 @@ class MusicianController extends Controller
      */
     public function show($id)
     {
-        //
+        $albums = DB::table('albums')->where('producer_id', '=', $id)->get();
+
+        return view('/musicians/albums_by_musician', compact('albums'));
     }
 
     /**
