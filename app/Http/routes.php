@@ -19,4 +19,5 @@ Route::resource('songs', 'SongsController');
 Route::resource('homes', 'HomesController');
 Route::resource('instruments', 'InstrumentsController');
 Route::resource('albums', 'AlbumsController');
+Route::resource('musicians.list_albums', 'MusicianController');
 
