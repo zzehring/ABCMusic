@@ -55,11 +55,11 @@
       <file leaf-file-name="MusicianController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MusicianController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23728813">
-              <caret line="108" column="32" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.5762712">
+              <caret line="118" column="32" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
-                <marker date="1449534190000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
+                <marker date="1449534309000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
               </folding>
             </state>
           </provider>
@@ -629,7 +629,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449534084797</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Listing albums from artist">
+      <created>1449534209452</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1449534209452</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -692,7 +698,7 @@
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
-            <marker date="1449534190000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
+            <marker date="1449534309000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
           </folding>
         </state>
       </provider>
@@ -745,7 +751,7 @@
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
-            <marker date="1449534190000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
+            <marker date="1449534309000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
           </folding>
         </state>
       </provider>
@@ -1031,11 +1037,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MusicianController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23728813">
-          <caret line="108" column="32" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.5762712">
+          <caret line="118" column="32" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
-            <marker date="1449534190000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
+            <marker date="1449534309000" expanded="true" signature="1116:1153" placeholder="select * fro..Homes..." />
           </folding>
         </state>
       </provider>

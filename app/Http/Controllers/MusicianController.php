@@ -116,7 +116,7 @@ class MusicianController extends Controller
 
         $albums = DB::table('albums')->where('producer_id', '=', $id)->get();
 
-        return view('musicians.albums_by_musician', compact('albums'));
+        return view('/musicians/albums_by_musician', compact('albums'));
 
     }
 }
