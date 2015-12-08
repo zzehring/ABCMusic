@@ -27,7 +27,7 @@
                     {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                     {!! Form::close() !!}
                 </td>
-                <td><a href="{{route('musicians.list_albums',$musician->id)}}" class="btn btn-warning">Show Musician Albums</a></td>
+                <td><a href="{{route('musicians.albums_by_musician',$musician->id)}}" class="btn btn-warning">Show Musician Albums</a></td>
             </tr>
         @endforeach
 
