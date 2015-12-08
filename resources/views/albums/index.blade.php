@@ -22,7 +22,7 @@
                 <td>{{ $album->copyright_date }}</td>
                 <td>{{ $album->format }}</td>
                 <td>{{ $album->producer_id }}</td>
-                {{--<td><a href="{{route('musician.edit',$musician->id)}}" class="btn btn-warning">Update</a></td>--}}
+                <td><a href="{{route('albums.show',$album->id)}}" class="btn btn-success">Show Songs</a></td>
                 {{--<td>--}}
                 {{--{!! Form::open(['method' => 'DELETE', 'route'=>['songs.destroy', $song->song_id]]) !!}--}}
                 {{--{!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}--}}

@@ -50,7 +50,17 @@ class AlbumsController extends Controller
      */
     public function show($id)
     {
-        //
+        $songs = DB::table('songs')
+                    ->join('albums', 'albums.id', '=', 'songs.album_id')
+                    ->where('album.id', '=', $id)
+                    ->get();
+        $album = DB::table('ablums')
+                    ->select('title')
+                    ->where('album.id', '=', $id)
+                    ->first();
+
+        return view('albums.show', compact('album', 'songs'));
+
     }
 
     /**
