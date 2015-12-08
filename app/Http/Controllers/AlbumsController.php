@@ -55,7 +55,7 @@ class AlbumsController extends Controller
                     ->join('albums', 'albums.id', '=', 'songs.album_id')
                     ->where('albums.id', '=', $id)
                     ->get();
-        $album = DB::table('ablums')
+        $album = DB::table('albums')
                     ->select('title')
                     ->where('albums.id', '=', $id)
                     ->first();
