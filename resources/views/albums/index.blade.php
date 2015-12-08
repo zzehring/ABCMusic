@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>ABC Music Albums</h1>
-    {{--<a href="{{route('albums.album_date')}}" class="btn btn-success">How Many Albums from 2005?</a>--}}
+    <a href="{{route('albums.avg_albums')}}" class="btn btn-success">Artists with More than Average Album Count</a>
     <h3>{{ $count }} Albums from 2005</h3>
     <hr>
     <table class="table table-striped table-bordered table-hover">

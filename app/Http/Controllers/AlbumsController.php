@@ -115,4 +115,19 @@ class AlbumsController extends Controller
 
         return view('albums.album_date', compact('count'));
     }
+
+    public function avgAlbums() {
+
+//        select avg(albumCount) from (SELECT musicians.name, COUNT(albums.id) AS albumCount
+//        FROM musicians LEFT JOIN albums On musicians.id = albums.producer_id
+//        Group By musicians.name) as T;
+
+        $avg = DB::select('select avg(albumCount) from (SELECT musicians.name, COUNT(albums.id) AS albumCount FROM
+            musicians LEFT JOIN albums On musicians.id = albums.producer_id Group By musicians.name) as T');
+
+        var_dump($avg);
+
+        return view('albums.avg_albums', compact('artists'));
+
+    }
 }
