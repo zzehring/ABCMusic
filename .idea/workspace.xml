@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ade668c3-095e-41a0-9073-8b9bc32e193e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/albums/avg_albums.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/albums/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/albums/index.blade.php" />
     </list>
     <ignored path="musicdb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,12 +45,12 @@
       <file leaf-file-name="AlbumsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6866841">
-              <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.49086162">
+              <caret line="131" column="50" selection-start-line="124" selection-start-column="10" selection-end-line="131" selection-end-column="50" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1449614665000" expanded="true" signature="2909:3102" placeholder="select avg(a..name..." />
-                <marker date="1449614665000" expanded="true" signature="2938:3096" placeholder="SELECT music..musicians..." />
+                <marker date="1449615235000" expanded="true" signature="2947:3212" placeholder="select avg(a..name..." />
+                <marker date="1449615235000" expanded="true" signature="3006:3206" placeholder="SELECT music..musicians..." />
               </folding>
             </state>
           </provider>
@@ -471,12 +468,6 @@
       <option name="number" value="Default" />
       <updated>1449185190669</updated>
     </task>
-    <task id="LOCAL-00022" summary="Listing albums from artist">
-      <created>1449533336654</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1449533336654</updated>
-    </task>
     <task id="LOCAL-00023" summary="Listing albums from artist">
       <created>1449533545628</created>
       <option name="number" value="00023" />
@@ -765,7 +756,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449613056378</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="avg musicians">
+      <created>1449614678632</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1449614678633</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -811,7 +808,8 @@
     <MESSAGE value="Listing songs by album" />
     <MESSAGE value="listing albums in 2005" />
     <MESSAGE value="multiple musicians&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="multiple musicians&#10;" />
+    <MESSAGE value="avg musicians" />
+    <option name="LAST_COMMIT_MESSAGE" value="avg musicians" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1228,12 +1226,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6866841">
-          <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.49086162">
+          <caret line="131" column="50" selection-start-line="124" selection-start-column="10" selection-end-line="131" selection-end-column="50" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1449614665000" expanded="true" signature="2909:3102" placeholder="select avg(a..name..." />
-            <marker date="1449614665000" expanded="true" signature="2938:3096" placeholder="SELECT music..musicians..." />
+            <marker date="1449615235000" expanded="true" signature="2947:3212" placeholder="select avg(a..name..." />
+            <marker date="1449615235000" expanded="true" signature="3006:3206" placeholder="SELECT music..musicians..." />
           </folding>
         </state>
       </provider>

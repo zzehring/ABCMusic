@@ -122,8 +122,20 @@ class AlbumsController extends Controller
 //        FROM musicians LEFT JOIN albums On musicians.id = albums.producer_id
 //        Group By musicians.name) as T;
 
-        $avg = DB::select('select avg(albumCount) from (SELECT musicians.name, COUNT(albums.id) AS albumCount FROM
-            musicians LEFT JOIN albums On musicians.id = albums.producer_id Group By musicians.name) as T');
+//        $avg = DB::select('
+//            select
+//            select avg(albumCount)
+//            from
+//              (SELECT musicians.name, COUNT(albums.id) AS albumCount
+//                FROM musicians LEFT JOIN albums
+//                On musicians.id = albums.producer_id
+//                Group By musicians.name) as T');
+
+        $avg = DB::table('musicians')
+                        ->select(DB::raw('SELECT musicians.name, COUNT(albums.id) AS albumCount'))
+                        ->leftJoin('albums', 'albums.producer_id', '=', 'musicians.id')
+                        ->groupBy('musicians.id')
+                        ->avg('albumCount');
 
         var_dump($avg);
 
