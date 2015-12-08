@@ -92,7 +92,7 @@ class SongsController extends Controller
         return redirect('songs');
     }
 
-    public function songsCount(){
+    public function songCount(){
 
 //        SELECT musicians.name, COUNT(Musician_has_Song.song_id) AS count
 //        FROM musicians LEFT JOIN Musician_has_Song On musicians.id = Musician_has_Song.musician_id
