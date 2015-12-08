@@ -2,6 +2,7 @@
 
 @section('content')
     <h1>ABC Music Songs</h1>
+    <a href="{{route('songs.song_count')}}" class="btn btn-warning">Musicians' Song Count</a>
     <hr>
     <table class="table table-striped table-bordered table-hover">
         <thead>
