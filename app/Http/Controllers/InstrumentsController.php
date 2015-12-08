@@ -107,9 +107,9 @@ class InstrumentsController extends Controller
         //HAVING COUNT(instrument_id) > 1;
 
         $artists = DB::table('musicians')
-                        ->join('Musician_has_Instrument', 'musician_id', '=', 'musicians.id')
+                        ->join('Musician_has_Instrument', 'Musician_has_Instrument.musician_id', '=', 'musicians.id')
                         ->groupBy('Musician_has_Instrument.musician_id')
-                        ->having(DB::raw('count(instrument_id) > 1'))
+                        ->having(DB::raw('count(Musician_has_Instrument.instrument_id) > 1'))
                         ->get();
 
         return view('instruments.multiple', compact('artists'));
