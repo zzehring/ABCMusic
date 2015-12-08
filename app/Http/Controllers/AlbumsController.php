@@ -132,10 +132,10 @@ class AlbumsController extends Controller
 //                Group By musicians.name) as T');
 
         $avg = DB::table('musicians')
-                        ->select(DB::raw('SELECT musicians.name, COUNT(albums.id) AS albumCount'))
+                        ->select(DB::raw('SELECT COUNT(albums.id) AS albumCount'))
                         ->leftJoin('albums', 'albums.producer_id', '=', 'musicians.id')
                         ->groupBy('musicians.id')
-                        ->avg('albumCount');
+                        ->avg('*');
 
         var_dump($avg);
 

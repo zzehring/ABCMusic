@@ -45,12 +45,12 @@
       <file leaf-file-name="AlbumsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49086162">
-              <caret line="131" column="50" selection-start-line="124" selection-start-column="10" selection-end-line="131" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.6083551">
+              <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1449615235000" expanded="true" signature="2947:3212" placeholder="select avg(a..name..." />
-                <marker date="1449615235000" expanded="true" signature="3006:3206" placeholder="SELECT music..musicians..." />
+                <marker date="1449615310000" expanded="true" signature="2947:3212" placeholder="select avg(a..name..." />
+                <marker date="1449615310000" expanded="true" signature="3006:3206" placeholder="SELECT music..musicians..." />
               </folding>
             </state>
           </provider>
@@ -468,12 +468,6 @@
       <option name="number" value="Default" />
       <updated>1449185190669</updated>
     </task>
-    <task id="LOCAL-00023" summary="Listing albums from artist">
-      <created>1449533545628</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1449533545628</updated>
-    </task>
     <task id="LOCAL-00024" summary="Listing albums from artist">
       <created>1449533616951</created>
       <option name="number" value="00024" />
@@ -762,7 +756,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449614678633</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="avg musicians">
+      <created>1449615242951</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1449615242951</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1226,12 +1226,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49086162">
-          <caret line="131" column="50" selection-start-line="124" selection-start-column="10" selection-end-line="131" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.6083551">
+          <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1449615235000" expanded="true" signature="2947:3212" placeholder="select avg(a..name..." />
-            <marker date="1449615235000" expanded="true" signature="3006:3206" placeholder="SELECT music..musicians..." />
+            <marker date="1449615310000" expanded="true" signature="2947:3212" placeholder="select avg(a..name..." />
+            <marker date="1449615310000" expanded="true" signature="3006:3206" placeholder="SELECT music..musicians..." />
           </folding>
         </state>
       </provider>
