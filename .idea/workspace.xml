@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ade668c3-095e-41a0-9073-8b9bc32e193e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/albums/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/albums/index.blade.php" />
     </list>
     <ignored path="musicdb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlbumsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AlbumsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3524804">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/albums/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.19582245">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -128,8 +128,8 @@
         <option value="$PROJECT_DIR$/resources/views/albums/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/albums/album_date.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/albums/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/albums/index.blade.php" />
       </list>
     </option>
   </component>
@@ -420,12 +420,6 @@
       <option name="number" value="Default" />
       <updated>1449185190669</updated>
     </task>
-    <task id="LOCAL-00009" summary="Update DB">
-      <created>1449529883646</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1449529883646</updated>
-    </task>
     <task id="LOCAL-00010" summary="Update DB">
       <created>1449529891220</created>
       <option name="number" value="00010" />
@@ -714,7 +708,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449607276130</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="listing albums in 2005">
+      <created>1449607428943</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1449607428943</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1141,21 +1141,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/albums/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AlbumsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3524804">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/albums/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19582245">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
