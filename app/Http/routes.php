@@ -14,11 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('musicians/albums_by_musician/{id}', array('as'=>'musicians.albums_by_musician', 'uses' => 'MusicianController@list_albums'));
+Route::get('albums/album_date', array('as'=>'albums.album_date', 'uses' => 'AlbumsController@albumsInDate'));
+Route::get('instruments/multiple/', array('as'=>'instruments.multiple', 'uses' => 'InstrumentController@multipleInstrumentMusicians'));
 Route::resource('musicians','MusicianController');
 Route::resource('songs', 'SongsController');
 Route::resource('homes', 'HomesController');
 Route::resource('instruments', 'InstrumentsController');
 Route::resource('albums', 'AlbumsController');
-Route::get('musicians/albums_by_musician/{id}', array('as'=>'musicians.albums_by_musician', 'uses' => 'MusicianController@list_albums'));
-Route::get('albums/album_date', array('as'=>'albums.album_date', 'uses' => 'AlbumsController@albumsInDate'));
-Route::get('instruments/multiple', array('as'=>'instruments.multiple', 'uses' => 'InstrumentController@multipleInstrumentMusicians'));
