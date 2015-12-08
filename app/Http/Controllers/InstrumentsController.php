@@ -58,7 +58,7 @@ class InstrumentsController extends Controller
                         ->join('instruments', 'Musician_has_Instrument.instrument_id', '=', 'instruments.id')
                         ->select('musicians.name', 'musicians.id')
                         ->where('instruments.id', '=', $id)
-                        ->orderBy(DB::raw('REVERSE(SUBSTRING(REVERSE(musicians.name), 0, CHARINDEX(\' \', REVERSE(name))))'))
+                        ->orderBy('musicians.name')
                         ->get();
         $instrument = DB::table('instruments')->where('id', '=', $id)->first();
 
