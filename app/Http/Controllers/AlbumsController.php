@@ -19,9 +19,8 @@ class AlbumsController extends Controller
     public function index()
     {
         $count = DB::table('albums')
-            ->select(DB::raw('count(id) as albumsInYear'))
             ->where('copyright_date', 'like', '%2005%')
-            ->get();
+            ->count();
 
         var_dump($count);
 
