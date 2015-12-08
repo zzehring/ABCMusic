@@ -2,6 +2,7 @@
 
 @section('content')
     <h1>ABC Music Instruments</h1>
+    <a href="{{route('instruments.multiple')}}" class="btn btn-warning">Musicians that play multiple instruments</a>
     <hr>
     <table class="table table-striped table-bordered table-hover">
         <thead>
