@@ -23,6 +23,8 @@ class AlbumsController extends Controller
             ->where('copyright_date', 'like', '%2005%')
             ->get();
 
+        var_dump($count);
+
         $albums=Album::all();
         return view('albums.index',compact('albums', 'count'));
     }
