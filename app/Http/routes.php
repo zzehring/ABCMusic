@@ -19,5 +19,5 @@ Route::resource('songs', 'SongsController');
 Route::resource('homes', 'HomesController');
 Route::resource('instruments', 'InstrumentsController');
 Route::resource('albums', 'AlbumsController');
-Route::get('/musicians/albums_by_musician', array('as'=>'musicians.albums_by_musician', 'uses' => 'MusicianController@list_albums'));
+Route::get('musicians/albums_by_musician/{id}', array('as'=>'musicians.albums_by_musician', 'uses' => 'MusicianController@list_albums'));
 
