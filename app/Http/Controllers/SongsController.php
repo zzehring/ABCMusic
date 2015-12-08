@@ -91,4 +91,19 @@ class SongsController extends Controller
 
         return redirect('songs');
     }
+
+    public function songsCount(){
+
+//        SELECT musicians.name, COUNT(Musician_has_Song.song_id) AS count
+//        FROM musicians LEFT JOIN Musician_has_Song On musicians.id = Musician_has_Song.musician_id
+//        Group By musicians.name;
+        $artists = DB::table('musicians')
+                        ->select(DB::raw('musicians.name, COUNT(Musician_has_Song.song_id) AS count'))
+                        ->leftJoin('Musician_has_Song', 'musicians.id', '=', 'Musician_has_Song.musician_id')
+                        ->groupBy('musicians.name')
+                        ->get();
+
+        return view('songs.song_count', compact('artists'));
+
+    }
 }
