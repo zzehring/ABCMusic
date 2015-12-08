@@ -71,8 +71,9 @@ class MusicianController extends Controller
     public function show($id)
     {
         $albums = DB::table('albums')->where('producer_id', '=', $id)->get();
+        $artist = DB::table('musicians')->where('id', '=', $id)->get();
 
-        return view('musicians.show', compact('albums'));
+        return view('musicians.show', compact('albums', 'artist'));
     }
 
     /**
@@ -84,6 +85,7 @@ class MusicianController extends Controller
     public function edit($id)
     {
         $musician=Musician::find($id);
+
         return view('musicians.edit', compact('musician'));
     }
 

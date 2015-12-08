@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('content')
-    <h1>ABC Music</h1>
+    <h1>{{ $artist->name }}'s Albums</h1>
     <hr>
     <table class="table table-striped table-bordered table-hover">
         <thead>
