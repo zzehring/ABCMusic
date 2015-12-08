@@ -18,8 +18,13 @@ class AlbumsController extends Controller
      */
     public function index()
     {
+        $count = DB::table('albums')
+            ->select(DB::raw('count(id) as albumsInYear'))
+            ->where('copyright_date', 'like', '%2005%')
+            ->get();
+
         $albums=Album::all();
-        return view('albums.index',compact('albums'));
+        return view('albums.index',compact('albums', 'count'));
     }
 
     /**

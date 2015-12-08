@@ -2,7 +2,8 @@
 
 @section('content')
     <h1>ABC Music Albums</h1>
-    <a href="{{route('albums.album_date')}}" class="btn btn-success">How Many Albums from 2005?</a>
+    {{--<a href="{{route('albums.album_date')}}" class="btn btn-success">How Many Albums from 2005?</a>--}}
+    <h2>{{ $count->albumsInYear }} Albums from 2005</h2>
     <hr>
     <table class="table table-striped table-bordered table-hover">
         <thead>
