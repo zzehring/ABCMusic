@@ -14,14 +14,14 @@
         </tr>
         </thead>
         <tbody>
-        {{--@foreach ($albums as $album)--}}
-        {{--<tr>--}}
-        {{--<td>{{ $album->id }}</td>--}}
-        {{--<td>{{ $album->title }}</td>--}}
-        {{--<td>{{ $album->copyright_date }}</td>--}}
-        {{--<td>{{ $album->format }}</td>--}}
-        {{--</tr>--}}
-        {{--@endforeach--}}
+        @foreach ($albums as $album)
+            <tr>
+                <td>{{ $album->id }}</td>
+                <td>{{ $album->title }}</td>
+                <td>{{ $album->copyright_date }}</td>
+                <td>{{ $album->format }}</td>
+            </tr>
+            @endforeach
 
         </tbody>
 
