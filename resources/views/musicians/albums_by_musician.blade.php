@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('content')
-    <h1>ABC Music Albums</h1>
+    <h1>ABC Music Instruments</h1>
     <hr>
     <table class="table table-striped table-bordered table-hover">
         <thead>
@@ -10,7 +10,6 @@
             <th>Title</th>
             <th>Copyright Date</th>
             <th>Format</th>
-            <th>Producer ID</th>
             <th colspan="3">Actions</th>
         </tr>
         </thead>
@@ -21,13 +20,6 @@
                 <td>{{ $album->title }}</td>
                 <td>{{ $album->copyright_date }}</td>
                 <td>{{ $album->format }}</td>
-                <td>{{ $album->producer_id }}</td>
-                {{--<td><a href="{{route('musician.edit',$musician->id)}}" class="btn btn-warning">Update</a></td>--}}
-                {{--<td>--}}
-                {{--{!! Form::open(['method' => 'DELETE', 'route'=>['songs.destroy', $song->song_id]]) !!}--}}
-                {{--{!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}--}}
-                {{--{!! Form::close() !!}--}}
-                {{--</td>--}}
             </tr>
         @endforeach
 

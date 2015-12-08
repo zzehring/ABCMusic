@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Musician;
 use App\Home;
+use App\Album;
 
 use Request;
 use DB;
@@ -109,5 +110,13 @@ class MusicianController extends Controller
     {
         Musician::find($id)->delete();
         return redirect('musicians');
+    }
+
+    public function list_albums($id) {
+
+        $albums = DB::table('albums')->where('producer_id', '=', $id)->get();
+
+        return view('musicians.albums_by_musician');
+
     }
 }
