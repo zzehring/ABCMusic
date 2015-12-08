@@ -89,8 +89,8 @@
       <file leaf-file-name="InstrumentsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InstrumentsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5691906">
-              <caret line="109" column="83" selection-start-line="109" selection-start-column="83" selection-end-line="109" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.41253263">
+              <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -473,12 +473,6 @@
       <option name="number" value="Default" />
       <updated>1449185190669</updated>
     </task>
-    <task id="LOCAL-00015" summary="Update DB">
-      <created>1449530855500</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1449530855500</updated>
-    </task>
     <task id="LOCAL-00016" summary="Update DB">
       <created>1449530995926</created>
       <option name="number" value="00016" />
@@ -767,7 +761,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449609638896</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="multiple musicians&#10;">
+      <created>1449609732638</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1449609732638</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1213,8 +1213,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InstrumentsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5691906">
-          <caret line="109" column="83" selection-start-line="109" selection-start-column="83" selection-end-line="109" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.41253263">
+          <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
