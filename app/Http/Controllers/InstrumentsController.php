@@ -59,8 +59,7 @@ class InstrumentsController extends Controller
                         ->select('musicians.name')
                         ->where('instruments.id', '=', $id)
                         ->get();
-        $instrument = DB::table('instruments')->where('id', '=', $id);
-
+        $instrument = DB::table('instruments')->where('id', '=', $id)->first();
 
         return view('instruments.show', compact('artists', 'instrument'));
     }
