@@ -56,7 +56,7 @@ class InstrumentsController extends Controller
         $artists = DB::table('Musician_has_Instrument')
                         ->join('musicians', 'Musician_has_Instrument.musician_id', '=', 'musicians.id')
                         ->join('instruments', 'Musician_has_Instrument.instrument_id', '=', 'instruments.id')
-                        ->select('musicians.name')
+                        ->select('musicians.name', 'musicians.id')
                         ->where('instruments.id', '=', $id)
                         ->get();
         $instrument = DB::table('instruments')->where('id', '=', $id)->first();
