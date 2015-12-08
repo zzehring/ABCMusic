@@ -52,6 +52,7 @@ class AlbumsController extends Controller
     public function show($id)
     {
         $songs = DB::table('songs')
+                    ->select('songs.*')
                     ->join('albums', 'albums.id', '=', 'songs.album_id')
                     ->where('albums.id', '=', $id)
                     ->get();
