@@ -98,4 +98,15 @@ class AlbumsController extends Controller
     {
         //
     }
+
+    public function albumsInDate() {
+        //select count(id) as 'albums in year' from albums where copyright_date like '%2005%';
+
+        $count = DB::table('albums')
+            ->select(DB::raw('count(id) as albumsInYear'))
+            ->where('copyright_date', 'like', '%2005%')
+            ->get();
+
+        return view('albums.album_date', compact('count'));
+    }
 }
