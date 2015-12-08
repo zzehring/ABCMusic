@@ -10,7 +10,6 @@
             <th>Title</th>
             <th>Copyright Date</th>
             <th>Format</th>
-            <th colspan="3">Actions</th>
         </tr>
         </thead>
         <tbody>
