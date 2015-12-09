@@ -22,8 +22,6 @@ class AlbumsController extends Controller
             ->where('copyright_date', 'like', '%2005%')
             ->count();
 
-        var_dump($count);
-
         $albums=Album::all();
         return view('albums.index',compact('albums', 'count'));
     }
@@ -131,13 +129,16 @@ class AlbumsController extends Controller
 //                On musicians.id = albums.producer_id
 //                Group By musicians.name) as T');
 
-        $avg = DB::table('musicians')
-                        ->select(DB::raw('SELECT COUNT(albums.id) AS albumCount'))
-                        ->leftJoin('albums', 'albums.producer_id', '=', 'musicians.id')
-                        ->groupBy('musicians.id')
-                        ->avg('*');
-
-        var_dump($avg);
+        $artists = DB::select('SELECT musicians.name, COUNT(albums.id) AS albumCount
+                        FROM musicians, albums
+                        WHERE musicians.id = albums.producer_id
+                        GROUP BY musicians.id
+                        HAVING albumCount > (
+                        SELECT AVG(count.albumCount)
+                        FROM
+                        (SELECT musicians.name, COUNT(albums.id) AS albumCount
+                        FROM musicians LEFT JOIN albums On musicians.id = albums.producer_id
+                        Group By musicians.id) count)');
 
         return view('albums.avg_albums', compact('artists'));
 
