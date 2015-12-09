@@ -14,7 +14,7 @@
         @foreach ($artists as $artist)
             <tr>
                 <td>{{ $artist->name }}</td>
-                <td>{{ $artist->count }}</td>
+                <td>{{ $artist->albumCount }}</td>
             </tr>
         @endforeach
 
